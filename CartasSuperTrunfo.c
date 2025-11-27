@@ -42,9 +42,9 @@ int main() {
     scanf("%u", &populacao1);
     printf("Aréa (km²):");
     scanf("%f", &area1);
-    printf("PIB: ");
+    printf("PIB:");
     scanf("%f", &pib1);
-    printf("Pontos Turisticos:");
+    printf("Pontos Turisticos:\n");
     scanf("%d", &pontos1);
     
 
@@ -81,7 +81,7 @@ int main() {
   printf("Estado: %s\n", estado1);
   printf("Código da carta: %s\n", codigo1);
   printf("Cidade: %s\n", cidade1);
-  printf("População: %u\n", populacao1);
+  printf("População: %d\n", populacao1);
   printf("Área: %.2f km²\n", area1);
   printf("PIB: %.2f\n", pib1);
   printf("Pontos Turisticos: %d\n", pontos1);
@@ -95,7 +95,7 @@ int main() {
   printf("Estado: %s\n", estado2);
   printf("Código da carta: %s\n", codigo2);
   printf("Cidade: %s\n", cidade2);
-  printf("População: %u\n", populacao2);
+  printf("População: %d\n", populacao2);
   printf("Área: %.2f km²\n", area2);
   printf("PIB: %.2f\n", pib2);
   printf("Pontos Turisticos: %d\n", pontos2);
@@ -104,18 +104,16 @@ int main() {
 
 //ARMAZENAMENTO DOS DADOS PARA COMPARAÇÃO
 unsigned int resultado_populacao;
-float resultado_area;
-float resultado_pontosturisticos;
+int resultado_area;
+int resultado_pontosturisticos;
 float resultado_densidade_populacional;
 float resultados_pib_capita;
 long int resultado_super_trunfo;
-long int super_trunfo1;
-long int super_trunfo2;
 
 //ARMAZENAMENTO SUPER TRUNFO - SOMA DO RESULTADO DE CADA CARTA
 
-long int super_trunfo1 = populacao1 + area1 + pib1 + pontos1 + pib_per_capita1;
-long int super_trunfo2 = populacao2 + area2 + pib2 + pontos2 + pib_per_capita2;
+long int super_trunfo1 = (float) populacao1 + area1 + pib1 + pontos1 + pib_per_capita1;
+long int super_trunfo2 = (float) populacao2 + area2 + pib2 + pontos2 + pib_per_capita2;
 
 //COMPARAÇÃO DOS RESULTADOS - DEFININDO O VENCEDOR
 
@@ -132,7 +130,7 @@ long int super_trunfo2 = populacao2 + area2 + pib2 + pontos2 + pib_per_capita2;
 printf("GANHADOR DO JOGO\n");
 printf("1 PARA CARTA *1 e 0 PARA CARTA *2\n\n");
 
-printf("População: %u\n" , resultado_populacao);
+printf("População: %d\n" , resultado_populacao);
 
 
 
