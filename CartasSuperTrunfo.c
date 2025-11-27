@@ -119,6 +119,7 @@ long int super_trunfo2 = (float) populacao2 + area2 + pib2 + pontos2 + pib_per_c
 
  resultado_populacao = populacao1 > populacao2;
  resultado_area = area1 > area2;
+ resultado_pib = pib1 > pib2;
  resultado_pontosturisticos = pontos1 > pontos2;
  resultado_densidade_populacional = densidade_populacional1 < densidade_populacional2;
  resultados_pib_capita = pib_per_capita1 > pib_per_capita2;
@@ -131,7 +132,11 @@ printf("GANHADOR DO JOGO\n");
 printf("1 PARA CARTA *1 e 0 PARA CARTA *2\n\n");
 
 printf("População: %d\n" , resultado_populacao);
-
+printf("Área: %d\n" , resultado_area);
+printf("PIB: %d\n" , resultado_pib);
+print("Pontos Turisticos:" , resultado_pontosturisticos);
+printf("Densidade Populacional: %d\n" , resultado_densidade_populacional);
+printf("PIB PER CAPITA: %d\n" , resultados_pib_capita);
 
 
 
