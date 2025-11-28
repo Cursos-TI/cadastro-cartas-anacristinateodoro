@@ -106,9 +106,9 @@ int main() {
 unsigned int resultado_populacao;
 int resultado_area;
 int resultado_pontosturisticos;
-float resultado_densidade_populacional;
-float resultados_pib_capita;
-long int resultado_super_trunfo;
+int resultado_densidade_populacional;
+int resultados_pib_capita;
+int resultado_super_trunfo;
 int resultado_pib;
 
 //ARMAZENAMENTO SUPER TRUNFO - SOMA DO RESULTADO DE CADA CARTA
@@ -129,13 +129,13 @@ long int super_trunfo2 = (float) populacao2 + area2 + pib2 + pontos2 + pib_per_c
 
 // exibição do resultado
 
-printf("GANHADOR DO JOGO\n");
+printf("\n*******GANHADOR DO JOGO*******\n");
 printf("1 PARA CARTA *1 e 0 PARA CARTA *2\n\n");
 
 printf("População: %d\n" , resultado_populacao);
 printf("Área: %d\n" , resultado_area);
 printf("PIB: %d\n" , resultado_pib);
-print("Pontos Turisticos:" , resultado_pontosturisticos);
+printf("Pontos Turisticos: %d\n" , resultado_pontosturisticos);
 printf("Densidade Populacional: %d\n" , resultado_densidade_populacional);
 printf("PIB PER CAPITA: %d\n" , resultados_pib_capita);
 printf("SUPER TRUFO: %d\n" , resultado_super_trunfo);
