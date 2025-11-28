@@ -109,6 +109,7 @@ int resultado_pontosturisticos;
 float resultado_densidade_populacional;
 float resultados_pib_capita;
 long int resultado_super_trunfo;
+int resultado_pib;
 
 //ARMAZENAMENTO SUPER TRUNFO - SOMA DO RESULTADO DE CADA CARTA
 
@@ -137,10 +138,7 @@ printf("PIB: %d\n" , resultado_pib);
 print("Pontos Turisticos:" , resultado_pontosturisticos);
 printf("Densidade Populacional: %d\n" , resultado_densidade_populacional);
 printf("PIB PER CAPITA: %d\n" , resultados_pib_capita);
-
-
-
-
+printf("SUPER TRUFO: %d\n" , resultado_super_trunfo);
 
   return 0;
 }  
