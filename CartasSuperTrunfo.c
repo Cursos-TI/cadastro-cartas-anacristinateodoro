@@ -66,11 +66,11 @@ int main() {
     scanf("%d", &pontos2);
    
     
-    //DEPOIS DA ENTRADA DOS DADOS 
-    pib_per_capita1 = pib1 / populacao1;
-    densidade_populacional1 = populacao1 / area1;
-    pib_per_capita2 = pib2 / populacao2;
-    densidade_populacional2 = populacao2 / area2 ;
+    //VARIAVEIS DEPOIS DA ENTRADA DOS DADOS 
+    float pib_per_capita1 = pib1 / populacao1;
+    float densidade_populacional1 = populacao1 / area1;
+    float pib_per_capita2 = pib2 / populacao2;
+    float densidade_populacional2 = populacao2 / area2 ;
 
     //EXIBIÇÃO DAS CARTAS CADASTRADAS
     printf("----CARTAS CADASTRADAS----\n\n");
@@ -81,7 +81,7 @@ int main() {
   printf("Estado: %s\n", estado1);
   printf("Código da carta: %s\n", codigo1);
   printf("Cidade: %s\n", cidade1);
-  printf("População: %d\n", populacao1);
+  printf("População: %u\n", populacao1);
   printf("Área: %.2f km²\n", area1);
   printf("PIB: %.2f\n", pib1);
   printf("Pontos Turisticos: %d\n", pontos1);
@@ -95,7 +95,7 @@ int main() {
   printf("Estado: %s\n", estado2);
   printf("Código da carta: %s\n", codigo2);
   printf("Cidade: %s\n", cidade2);
-  printf("População: %d\n", populacao2);
+  printf("População: %u\n", populacao2);
   printf("Área: %.2f km²\n", area2);
   printf("PIB: %.2f\n", pib2);
   printf("Pontos Turisticos: %d\n", pontos2);
@@ -139,6 +139,10 @@ printf("Pontos Turisticos: %d\n" , resultado_pontosturisticos);
 printf("Densidade Populacional: %d\n" , resultado_densidade_populacional);
 printf("PIB PER CAPITA: %d\n" , resultados_pib_capita);
 printf("SUPER TRUFO: %d\n" , resultado_super_trunfo);
+
+
+
+
 
   return 0;
 }  
